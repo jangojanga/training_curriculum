@@ -40,7 +40,10 @@ class CalendarsController < ApplicationController
       jango =(@todays_date + x).wday
       # wdays[jango]
 
-      days = { :month => (@todays_date + x).month, :date => (@todays_date+x).day, :plans => today_plans,:week_days =>wdays[jango]      }
+
+      days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans,week_days: wdays[jango]      }
+
+
 
       @week_days.push(days)
      
